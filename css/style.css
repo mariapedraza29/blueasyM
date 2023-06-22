@@ -64,15 +64,13 @@ header nav ul a:hover{
 .grid{
     display: grid;
     flex-direction: row;
-    grid-template-columns: 1fr 1.5fr 1.5fr 1.5fr 1.5fr 1fr;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
     background-color: #4bcaff;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    height: 50%;
-    padding-top: 10%;
+    height: 50vh;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-
 }
 .grid .img1{
     grid-column: 2/3;
@@ -94,7 +92,6 @@ header nav ul a:hover{
     width: 100%;
     height: 15vh;
     align-items: center;
-
 }
 .tituloB{
     width: 50%;
@@ -165,54 +162,74 @@ header nav ul a:hover{
     grid-row: 2/3;
 }
 .video{
+    width: 100%;
+    height: 70vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 50px;
     padding-top: 10px;
     background-color: #515f67;
-    height: 60vh;
+    
 }
 #video1{
-    width: 50%;
+    width: 55%;
+    height: 70vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+#video1 h1{
+    width: 100%;
+    padding-left: 61%;
+    color: white;
+    font-weight: 100;
 }
 #video1 p{
-    width: 80%;
+    width: 60%;
+    padding-left: 21%;
+    height: 20vh;
+    color: white;
+}
+#video1 button{
+    width: 20%;
+    height: 7vh;
+    background: none;
+    border:#293b46 solid 2px;
+    color: #293b46;
 }
 #video2{
-    width: 50%;
+    width: 28%;
 }
-
+.imgV{
+    width: 97%;
+}
 .twitter{
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #4bcaff;
-    height: 20vh;
+    height: 30vh;
     width: 100%;
 }
 span{
     border-bottom: 2px solid;
 }
 #twitter1{
-    width: 70%;
+    width: 63%;
     padding-left: 10%;
 
 }
 #twitter1 h2{
     padding-bottom: 10px;
-
+    font-weight: 100;
 }
 #twitter1 p{
     width: 70%;
     font-size: 15px;
 }
 #twitter2{
-    width: 10%;
+    width: 14%;
 }
 .d1{
     display: flex;
@@ -241,25 +258,18 @@ span{
 }
 #d1-1{
     padding-bottom: 30px;
-    width: 60%;
-}
-#d1-21{
-    padding-top: 5%;
+    width: 65%;
 }
 #d1-2{
     padding-bottom: 30px;
-    width: 60%;
+    width: 65%;
 }
 #d1-3{
     display: flex;
     justify-content: start;
     padding-bottom: 30px;
-    width: 60%;
+    width: 65%;
 }
-#ic{
-
-}
-
 .ult{
     display: flex;
     justify-content: center;
@@ -302,8 +312,7 @@ span{
 }
 .formulario p{
     display: flex;
-    width: 80%;
-    padding-left: 10%;
+    padding-left: 16%;
     padding-top: 3%;
     color: white;
     font-size: 20px;
@@ -311,13 +320,14 @@ span{
 .form{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 70%;
+    height: 40vh;
+    padding-left: 16%;
 }
 .iz{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-left: 10%;
     width: 50%;
 }
 .iz #iz1{
@@ -336,34 +346,37 @@ span{
     background:none;
     width: 80%;
     height: 6vh;
-    border: white 1px solid;
+    border: white 2px solid;
 }
 .de{
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
     width: 50%;
     padding-right: 10%;
+    padding-top: 3%;
+}
+.de p{
+    font-size: 13px;
+    width: 90%;
 }
 .textAr{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     width: 100%;
-    
+    height: 30vh;
 }
 .textAr textarea{
     background:none;
-    width: 80%;
-    margin-left: 10%;
-    border: white 1px solid;
+    width: 68%;
+    height: 20vh;
+    border: white 2px solid;
 }
 .textAr button{
     width: 20%;
     height: 5vh;
-    margin-left: 10%;
-    margin-top: 3%;
+    margin-top: 1%;
     background-color: #4bcaff;
     color: white;
     border: 0;
@@ -377,6 +390,7 @@ footer{
     background-color: #293b46;
     color: #515f67;
     align-items: center;
+    font-size: 10px;
 }
 footer .hspc{
     display: flex;
@@ -389,5 +403,119 @@ footer a{
     color: #515f67;
     border-left: 2px solid #515f67;
     padding-left: 3%;
-    font-size: 10px;
 }
+/* MEDIA QUERIES */
+@media screen and (max-width:1024px) { 
+    .main{
+        padding:0;
+        margin:0;
+        width: 1024px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1.3fr 1.5fr 1.5fr 1.5fr 1.5fr 1.3fr;
+        background-color: #53c9fc;
+        width: 100%;
+        height: 60vh;
+    }
+    .video{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        padding-top: 10px;
+        background-color: #515f67;
+        width: 100%;
+        height: 60vh;
+    }
+    #video1{
+        width: 40%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    #video1 h1{
+        color: white;
+        font-weight: 100;
+        font-size: 15px;
+    }
+    #video1 p{
+        width: 60%;
+        font-size: 70%;
+        height: 20vh;
+        color: white;
+    }
+    #video1 button{
+        width: 20%;
+        height: 7vh;
+        background: none;
+        border:#293b46 solid 2px;
+        color: #293b46;
+    }
+    #video2{
+        width: 50%;
+    }
+    #video2 img{
+        width: 70%;
+    }
+
+    
+}
+@media screen and (max-width:768px) { 
+    .main{
+        padding:0;
+        margin:0;
+        width: 768px;
+      }
+     
+    .grid{
+        width: 100%;
+        font-size: 73%;
+    }
+    .tituloB{
+        width: 50%;
+        display: grid;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .botons button{ 
+        font-size: 70%;
+    }
+    .botons button:hover{ 
+        height: 30px;
+        color: #4bcaff;
+        border: #4bcaff solid 1px;
+        font-weight: 600;
+    }
+    .padre{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-row: 0.5fr 0.5fr;
+        gap: 20px;
+    }
+    #ims{
+        height: 20vh;
+    }
+    #video1 button{
+        width: 20%;
+        height: 5vh;
+        margin-top: 6%;
+    }
+    #d1-1{
+        width: 65%;
+    }
+    #d1-2{
+        font-size: 80%;
+    }
+    #d1-3{
+        font-size: 80%;
+    }
+}
+
+
+
+
+
+
+
